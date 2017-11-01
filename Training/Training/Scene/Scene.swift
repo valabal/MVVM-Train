@@ -27,4 +27,5 @@ enum Scene {
   case mainVC(MainVM)
   case detailVC(DetailVM)
   case detailModal(Merchant)
+  case settingVC(SettingVM)
 }

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0DC36DE86E27026B500F2037 /* Pods_Training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68736A72664C85563A3F9858 /* Pods_Training.framework */; };
+		92B660471FA99E6B0059CDF7 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B660461FA99E6B0059CDF7 /* SettingVC.swift */; };
+		92B660491FA99E760059CDF7 /* SettingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B660481FA99E760059CDF7 /* SettingVM.swift */; };
+		92B6604B1FA9A4150059CDF7 /* SettingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B6604A1FA9A4150059CDF7 /* SettingStoryboard.storyboard */; };
+		92E131E51FA9BA4100542E97 /* DisposedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E131E41FA9BA4100542E97 /* DisposedCell.swift */; };
 		92ECA19E1F9704F100E9780E /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA19D1F9704F100E9780E /* LoginVM.swift */; };
 		92ECA1A11F973FE900E9780E /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECA1A01F973FE900E9780E /* ViewControllerExtension.swift */; };
 		AF02D1D91F4A858C00B7F852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF02D1D81F4A858C00B7F852 /* AppDelegate.swift */; };
@@ -84,6 +88,10 @@
 /* Begin PBXFileReference section */
 		11B774A568B7510B2F293504 /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Training/Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
 		68736A72664C85563A3F9858 /* Pods_Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B660461FA99E6B0059CDF7 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		92B660481FA99E760059CDF7 /* SettingVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVM.swift; sourceTree = "<group>"; };
+		92B6604A1FA9A4150059CDF7 /* SettingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingStoryboard.storyboard; sourceTree = "<group>"; };
+		92E131E41FA9BA4100542E97 /* DisposedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposedCell.swift; sourceTree = "<group>"; };
 		92ECA19D1F9704F100E9780E /* LoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		92ECA1A01F973FE900E9780E /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		AF02D1D51F4A858C00B7F852 /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +198,16 @@
 				B9ACD457026462C379EF5734 /* Pods-Training.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		92B660451FA99E520059CDF7 /* SettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				92B660461FA99E6B0059CDF7 /* SettingVC.swift */,
+				92B660481FA99E760059CDF7 /* SettingVM.swift */,
+				92B6604A1FA9A4150059CDF7 /* SettingStoryboard.storyboard */,
+			);
+			path = SettingVC;
 			sourceTree = "<group>";
 		};
 		92ECA19F1F973FD900E9780E /* Extension */ = {
@@ -315,6 +333,7 @@
 		AF02D1F11F4A88B300B7F852 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				92B660451FA99E520059CDF7 /* SettingVC */,
 				AF29E5E21F4D53BE00DF3C27 /* BasicVC */,
 				AF29E5DD1F4D465C00DF3C27 /* LoginVC */,
 				AF02D2321F4A8DFB00B7F852 /* MainVC */,
@@ -402,6 +421,7 @@
 			children = (
 				AF29E5EA1F4D5C7700DF3C27 /* BasicViewCell.swift */,
 				AF29E5EC1F4D5CA700DF3C27 /* BasicViewCell.xib */,
+				92E131E41FA9BA4100542E97 /* DisposedCell.swift */,
 			);
 			name = BasicCell;
 			sourceTree = "<group>";
@@ -546,6 +566,7 @@
 				AFF59AFA1F54257E00C68C32 /* web.png in Resources */,
 				AF02D1E51F4A858D00B7F852 /* LaunchScreen.storyboard in Resources */,
 				AFF59AE81F54254A00C68C32 /* instagram@3x.png in Resources */,
+				92B6604B1FA9A4150059CDF7 /* SettingStoryboard.storyboard in Resources */,
 				AF02D23E1F4A8F2000B7F852 /* ProximaNova-Regular.otf in Resources */,
 				AFF59AF01F54256500C68C32 /* pin@3x.png in Resources */,
 				AFF59AEE1F54256500C68C32 /* pin.png in Resources */,
@@ -649,6 +670,7 @@
 				AFBF1D571F94843000326B0D /* ActivityIndicator.swift in Sources */,
 				AF2ABFE81F541B1700D1449E /* UIImage+ImageEffects.m in Sources */,
 				AF15D4D31F566C5000921A69 /* HWPullToInfinity.swift in Sources */,
+				92E131E51FA9BA4100542E97 /* DisposedCell.swift in Sources */,
 				AF29E5E41F4D53CF00DF3C27 /* BasicVC.swift in Sources */,
 				AFBF1D551F946A8A00326B0D /* APIManager2.swift in Sources */,
 				AFBF1D5F1F94B75700326B0D /* SceneCoordinatorType.swift in Sources */,
@@ -658,10 +680,12 @@
 				AF02D22A1F4A8A2400B7F852 /* IndexButton.swift in Sources */,
 				AF02D1FF1F4A88F600B7F852 /* AlertHelper.swift in Sources */,
 				AFBF1D601F94B75700326B0D /* SceneCoordinator.swift in Sources */,
+				92B660491FA99E760059CDF7 /* SettingVM.swift in Sources */,
 				AF02D22E1F4A8A2400B7F852 /* EmveepAlertView.swift in Sources */,
 				92ECA1A11F973FE900E9780E /* ViewControllerExtension.swift in Sources */,
 				AF15D4D51F5679B900921A69 /* DetailModal.swift in Sources */,
 				AFBF1D531F94631900326B0D /* MainVM.swift in Sources */,
+				92B660471FA99E6B0059CDF7 /* SettingVC.swift in Sources */,
 				AF02D22B1F4A8A2400B7F852 /* UIDatePicker+Toolbar.swift in Sources */,
 				AF02D1F91F4A88F600B7F852 /* ColorHelper.swift in Sources */,
 				AFACB8321F98526E00AEB7E7 /* UIViewController+Rx.swift in Sources */,

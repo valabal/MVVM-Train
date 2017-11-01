@@ -25,7 +25,7 @@ class BasicCellObject: NSObject{
     
 }
 
-class BasicViewCell : UITableViewCell{
+class BasicViewCell : DisposedCell{
 
     @IBOutlet var titleLabel : UILabel?
     @IBOutlet var subTitleLabel : UILabel?

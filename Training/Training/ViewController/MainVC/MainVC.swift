@@ -20,7 +20,7 @@ class MainVC: BasicVC{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.settingRightNavButtonWithView(arrayOfUIView: [UIViewController.generateMenuButtonViewWithImage(image: UIImage.init(named: "shutdown"), action:#selector(logOff), target: self)])
+        self.settingRightNavButtonWithView(arrayOfUIView: [UIViewController.generateMenuButtonViewWithImage(image: UIImage.init(named: "shutdown"), action:#selector(logOff), target: self),UIViewController.generateMenuButtonViewWithImage(image: UIImage.init(named: "phone"), action:#selector(goToSetting), target: self)])
         
     }
     
@@ -98,6 +98,14 @@ class MainVC: BasicVC{
     
     func logOff(){
         NotificationCenter.default.post(name: .forceLogout, object: nil)
+    }
+    
+    func goToSetting(){
+    
+        let settingVM = SettingVM()
+        let scene = Scene.settingVC(settingVM)
+        self.viewModel.sceneCoordinator.transition(to: scene, type: .push)
+        
     }
     
 }

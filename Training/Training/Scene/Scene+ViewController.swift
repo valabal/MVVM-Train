@@ -43,7 +43,12 @@ extension Scene {
             let vc = storyboard.instantiateViewController(withIdentifier: "DetailModal") as! DetailModal
             vc.merchant = merchant
             return vc
-    }
+        case .settingVC(let viewModel):
+            let settingStoryboard = UIStoryboard(name: "SettingStoryboard", bundle: nil)
+            let vc = settingStoryboard.instantiateViewController(withIdentifier: "SettingVC") as! SettingVC
+            vc.viewModel = viewModel
+            return vc;
+     }
   }
 }
 
